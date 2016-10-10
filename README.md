@@ -8,7 +8,9 @@ This plugin will store all prerendered pages into a filesystem hierarchy.
 For example: 
 
 url http://domain.lo/?_escaped_fragment_=/en/about - will be saved in CACHE_ROOT_DIR/en/about/___  
-url http://domain.lo/?_escaped_fragment_=/en/main/path/blah - will be saved in CACHE_ROOT_DIR/en/main/path/blah/___
+url http://domain.lo/en/about?_escaped_fragment_= - will be saved in CACHE_ROOT_DIR/en/about/___  
+url http://domain.lo/?_escaped_fragment_=/en/main/path/blah - will be saved in CACHE_ROOT_DIR/en/main/path/blah/___  
+url http://domain.lo/en/main/path/blah?_escaped_fragment_= - will be saved in CACHE_ROOT_DIR/en/main/path/blah/___
 
 and etc
 
